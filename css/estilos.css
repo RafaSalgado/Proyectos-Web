@@ -1,0 +1,428 @@
+
+/*importamos las fuentes, en este caso usaremos algunas fuentes de google Arapey, Gloria Hallelujah, PT Sans Narrow, Sansita, Amiko*/
+@import url('https://fonts.googleapis.com/css?family=Arapey|Gloria+Hallelujah|PT+Sans+Narrow|Sansita|Amiko');
+
+
+/*definimos unas propiedades para los div, las imagenes y los nav y que se alinien sobre la base de la linea*/
+div,img, nav
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*definimos la anchura minima de los elementos html y body, y que se ocupe el 100% de alto del navegador, */
+html,
+body {
+	min-width:200px;
+	height:100%;
+
+}
+
+/*se define el body sin margenes, un color de fondo, color para el texto asi como una fuente y tamaño*/
+body{
+	margin:0;
+	background:#1c1f25;
+	color:#909397;
+	font:12px Arial, Helvetica, sans-serif;
+}
+
+/*definimos para los enlaces que no se tenga ningun tipo de decoracion para ellos y un color, a menos que se especifique*/
+a{
+	text-decoration:none;
+	color:#fff;
+}
+/*definimos que al pasar el puntero por encima de un enlace este se subraye */
+a:hover{
+    text-decoration:underline;
+}
+
+/*definimos para esta clase que el enlace sea de color azul y flote a derecha*/
+.upDown{	;
+	color: #226dff;
+	float:right;
+}
+
+/*los elementos dentro de esta clase floten a izquierda*/
+.align-left{
+	float:left;
+}
+
+/*basicamente son los atributos de nuestro div principal, definiendo su altura, ancho y asignando un comportamiento de
+tabla a los elementos que hay dentro de este id, tambien  definimos el fondo para la pagina y que se escale al tamaño de la pagina*/
+
+#wrapperPage{
+	height:100%;
+	width:100%;
+	display:table;
+	background:url(../images/bg-page3.png);
+	background-size: cover;
+}
+
+/*definimos los atributos  para el div que contendra la cabecera donde estara el menú de navegacion y el logo del nombre de la pagina*/
+
+.w1{
+	display:table-row;
+	width:100%;
+}
+
+/*el header contendra el menú, definimos varios atributos como la imagen de este div el margin 0 auto para que se centre*/
+
+#header{
+	width:1000px;
+	padding:34px 0px 20px 0px;
+	margin:0 auto;
+	position:relative;
+	z-index:10;
+    background: url(../images/imgtitle.png);
+    border-radius: 16px;
+}
+#header:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+/*Aqui en logo-block que es la clase del div donde ira el texto que esta al lado del logo "un vistazo hacia el universo" el cual tendra los siguientes atributos para el texto
+en logo cargaremos el logo "Constelaciones" y def algunas medidas de la caja*/
+.logo-block{
+	float:left;
+	font:italic 13px/22px Georgia, "Times New Roman", Times, serif;
+	color:white;
+	width:310px;}
+
+.logo{
+	float:left;
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(../images/logos.png) no-repeat;
+	width:146px;
+	height:70px;
+	margin:-8px 7px 5px 70px;
+	position:relative;
+}
+.logo a{
+	display:block;
+	height:100%;
+}
+.logo-block p{
+	background:url(../images/separador1.png) no-repeat 0 50%;
+	padding:0 0 0 8px;
+	overflow:hidden;
+	height:1%;
+}
+
+/*el id nav, para nuestro menu sera dotado por los siguientes atributos como el tamaño de fuente, definiremos las margenes y que no aparescan los puntos
+que representan item en las listas para eso el list-style, tambien definiremos el color de los enlaces como blancos y que no tengan decoracion al pasar
+el puntero sobre el enlace solo se cambie de color*/
+
+#nav{
+	float:right;
+	font-size:14px;
+	line-height:22px; 
+    margin:10px 40px 4px 70px;
+	postion: relative;
+	list-style: none;
+}
+#nav > li{
+	float:left;
+	padding:0 9px 14px 10px;
+	position:relative;
+}
+
+#nav > li > a{
+	color: white;
+}
+
+#nav > li:hover > a{
+	text-decoration: none;
+	color: #fdffad;
+}
+#nav li:hover ul{
+	display: block;
+}
+
+#nav ul{
+	display:none;
+	position:absolute;
+	top:33px;
+	left:11px;
+	width:160px;
+	padding:1px 8px 2px 7px;
+	background:url(../images/bg-nav-drop.png);
+	border:1px solid #787878;
+	overflow:hidden;
+	font-size:12px;
+	line-height:16px;
+	list-style: none;
+}
+#nav ul li{
+	border-top:1px solid #787878;
+	padding:1px 0;
+}
+
+#nav ul a{
+	display:block;
+	padding:6px 5px 5px 7px;
+}
+#nav ul a:hover{
+	text-decoration:none;
+	background: #787846
+}
+
+/*definiremos unas medidas para el id main, el cual contendra la informacion principal de cada pagina y los enlaces recomendados*/
+#main{
+	width:951px;
+	margin:50px auto;
+}
+
+/*realizamos el media query solicitado para que cambie de color cuando la resolucion no sea mas de 480 px en este caso
+que cambie del color del fondo a negro y la letra de los parrafos a amarillo*/
+
+@media only screen and (max-width: 480px) {
+	#main {
+		background-color: #010001;
+	}
+	.info  p{
+		color: #f4ff10;
+		font-size: 8px;
+
+	}
+}
+
+/* propiedades para el pie de imagen*/
+.images{
+	display:table;
+	margin: 0 auto;
+}
+.images img{
+	margin:0;
+	padding:0;
+}
+.images span{
+	line-height:normal;
+	font-size:11px;
+	display:table-caption;
+	color: #fdf8ff;
+	font-style:italic;
+	text-align:center;
+	position:relative;
+	height:0;
+}
+.images span span{
+	background: rgba(15, 15, 15, 0.53);
+	display:inline-block;
+	padding:13px;
+}
+
+/*Definimos las propiedades de la tabla, la cabecera de la tabla tendra un color de fondo violeta y color de texto amarillo
+para las filas color de fondo azul y texto color tipo gris*/
+
+th {
+	background-color: #663399;
+	color: #FFFF00;
+	font-weight: normal;
+	text-align: center;
+	padding: 10px 6px 4px 10px;
+	border-style:outset;
+	border-size:1px;
+	border-color: #663399;
+}
+td {
+	background-color: #3333FF;
+	color: #DDDDFF;
+	padding: 10px 18px 10px 10px;
+}
+td:hover {
+	color:#CC99CC;
+	text-shadow: 1px 1px #000000;
+}
+
+
+
+.title-block{
+    text-align: justify;
+	font-family: 'PT Sans Narrow',serif;
+	font-size: 18px;
+	padding:4px 0 36px;
+}
+.title-block h2{
+	color: #c7c2ff;
+	font-family:'Gloria Hallelujah';
+	font-size: 30px;
+	margin:0 0 7px;
+}
+.main-holder{
+	width:100%;
+	overflow:hidden;
+}
+
+#content{
+	float:left;
+	width:620px;
+}
+
+/*Tendremos para esta clase asociada al div donde colocaremos la informacion correspondiente al tema especifico tratado
+y definimos estilo para sus parrafos encabezados entre otros detalles de fuente*/
+.info {
+    line-height:18px;
+}
+
+
+.info h1{
+	color: rgba(201, 209, 255, 0.82);
+	font-family: 'Sansita';
+	font-size: 20px;
+	margin:0 0 7px;
+}
+
+
+.info p{
+    font-family: inherit;
+	font-size: 15px;
+    margin:0 0 21px;
+	text-align: justify;
+	min-width:200px;
+	max-width:1040px;
+}
+
+.info .heading{
+    margin:0 0 44px;
+}
+
+/*En la clase paging donde definiremos los atributos de las etquetas usadas por el intercambiador
+de pagina usada en la pagina Historia.html, historia2.html, historia3.html */
+.paging{
+	width:100%;
+	overflow:hidden;
+	line-height:15px;
+	margin:0 0 8px;
+	list-style: none;
+}
+.paging ul{
+	float:right;
+	list-style: none;
+}
+.paging li{
+	float:left;
+	width:37px;
+	height:37px;
+	color:#fff;
+	text-align:center;
+	padding:0 3px 0 0;
+}
+
+.paging active,
+.paging a,
+.paging a:hover{
+	float:left;
+	border:1px solid #828282;
+	background:#58595d;
+	padding:7px 2px 8px;
+	height:20px;
+	width:31px;
+	;
+}
+
+.paging ul a
+{	color:#909397;
+	background:#313338;
+	text-align:center;
+	list-style: none;
+}
+
+#sidebar{
+	float:right;
+	width:246px;
+	padding:0 21px 0 18px;
+	min-height:1201px;
+	background:url(../images/bg-sidebar.png) no-repeat;
+}
+
+#sidebarIndex{
+	float:right;
+	width:246px;
+	padding:0 21px 0 18px;
+	min-height:1021px;
+	background:url(../images/bg-sidebar.png) no-repeat;
+}
+
+/*la clase sub-box que es la caja donde estaran los enlaces recomendados tendran algunos atributos para ciertas etiquestas dentro de ella
+como el h2 y que la lista de enlaces aparezca sin item asi como atributos para la imagen de esta clase*/
+.sub-box{
+	border-top:1px solid #676769;
+	line-height:18px;
+	padding:8px 0 6px 2px;
+}
+.sub-box h2{
+	border-bottom:1px solid #676769;
+	padding:0 0 10px;
+	margin:0 0 17px -2px;
+	position:relative;
+	list-style: none;
+	color: white;
+}
+.sub-box li{
+	width:100%;
+	padding:9px 0 13px;
+	list-style: none;
+}
+.sub-box li:after{
+	content:"";
+	display:block;
+	clear:both;
+	list-style: none;
+}
+.sub-box li img{
+	margin:5px 13px 0 0;
+	position:relative;
+	list-style: none;
+
+}
+/*Definimos los atributos de esta clase que es la que usa el div de caja de abajo donde tendremos otras cajas de contacto como email y otras para redes socialesm definimos el fondo para esta*/
+.footer-block{
+	font-size:12px;
+	line-height:20px;
+	color:#fff;
+	margin:0 0 26px;
+	width:100%;
+	border-top:1px solid #3d3f44;
+	background:url(../images/bg-footer-block.png) no-repeat 50% 1px;
+	line-height:18px;
+}
+.footer-block .holder{
+	width:951px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:35px 0 14px;
+}
+
+.contact-list{
+	padding:9px 0 16px;
+	padding:0 0 14px 2px;
+	list-style: none;
+}
+
+/* le asociamos a esta clase el icono de mail que flote a izquierda y no se repita*/
+.contact-list a{
+	float:left;
+	background:url(../images/ico-mail.png) no-repeat;
+	padding:0 0 2px 32px;
+}
+
+/*definimos para esta clase asociada al div donde estaran las redes sociales, y definimos una altura y un ancho para que solo aparezca la que usaremos que sera el icon de facebook
+y no las demas ya que esta imagen es una imagen con multiples iconos de redes sociales*/
+.social ul a{
+	float:left;
+	width:24px;
+	height:24px;
+	background:url(../images/ico-socials.png) no-repeat;
+	list-style: none;
+}
+
+.social a.facebook{
+	background-position:-32px -32px;
+}

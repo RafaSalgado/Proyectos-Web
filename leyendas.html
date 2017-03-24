@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<!--en el head definimos la codificacion de caracteres utilizada, definiendo tambien el titulo de la pagina -->
+<head>
+    <meta charset="utf-8" />
+    <title>Constelaciones</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+    <link rel="shortcut icon" href="images/iconU.png" />
+</head>
+
+<!--creamos el body y los estructuramos mediante diversos div que a su vez contendran a otros para organizar la información, el mas grande y que contendra a todos
+  sera el div con id wrapperPage basicamente la diviremos en dos div mas, w1 que contendra la informacion y footer que es el cajon de abajo con los datos de contacto,
+  basicamente esta va ser la estructura de todas las demas paginas html del ejercicio-->
+<body>
+<div id="wrapperPage">
+    <div class="w1">
+        <div id="header">
+            <!--En el header va ser nuestra cabecera donde colocaremos el nombre de la pag y donde estara contenido el menú, el logo va ser un enlace que nos
+        lleve a la pagina principal (index.html) desde cualquier pagina del ejercicio-->
+            <div class="logo-block">
+                <h1 class="logo"><a href="Index.html"></a></h1>
+
+                <p>Un vistazo hacia el universo</p>
+            </div>
+
+            <!--estructuramos el menú de navegación presente en esta pagina html y en todas las demás, y para desplejar un submenu en el enlace "mitos y leyendas" y  que nos lleve
+a           un  lugar especifico, en este caso que estamos en la pagina "mitos y leyendas" cada item lo enlazamos a una parte determinada de la pagina a la que esta asociada-->
+            <ul id="nav">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li>
+                    <a href="leyendas.html">Mitos/Leyendas</a>
+                    <ul>
+                        <li><a href="#corvus">El Cuervo</a></li>
+                        <li><a href="#escorpio">Escorpio</a></li>
+                        <li><a href="#geminis">Geminis</a></li>
+                        <li><a href="#orion">Orion</a></li>
+                        <li><a href="#osa">Osa Mayor</a></li>
+                        <li><a href="#hidra">Hidra</a></li>
+                    </ul>
+                </li>
+                <li><a href="mirarConstelaciones.html">Observar Constelaciones</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+                <li><a href="lista.html">Lista de Constelaciones</a></li>
+                <li><a href="mapNav.html">Mapa de Navegación</a></li>
+            </ul>
+        </div>
+
+        <!--En el div con id main estara ubicada la informacion a la que hemos accedido, este div  estara constituido por otros 2, un div para el titulo e introduccion al tema
+		y otro que contendra otros 2 div basicos que son la informacion del tema y los enlaces externos(los enlaces estaran disponibles en todas las pag)-->
+
+
+        <div id="main">
+            <div class="title-block">
+                <!--creamos una especie de bandera llamada "arriba" que nos traiga a este punto en caso de que clickeen el enlace a la que esta asociada,
+            en este caso cuando pulsen "ir arriba" en la parte de abajo de la pagina-->
+                <a name="arriba"></a>
+                <h2>Mitos y Leyendas de las constelaciones</h2>
+
+                <p>Las constelaciones dan origen o son causa de incontables historias, pero también son como ventanas que nos permiten conocer el Universo.</p>
+                 <p>  A través de sus imaginarias figuras observamos nebulosas, nuevos planetas, cúmulos estelares, galaxias, estrellas que han estallado...
+                    Maravillas que estimulan nuestra ansiedad y nos llevan por diferentes caminos en busca de nuevas explicaciones.</p>
+            </div>
+
+            <!--En el div con id main estara ubicada la informacion a la que hemos accedido, este div en este caso tendra 2 div basicos con id main-holder que contendra
+            la informacion repartida en otros div  del tema y los enlaces externos(los enlaces estaran disponibles en todas las pag)-->
+            <div class="main-holder">
+
+                <div id="content">
+                    <!--creamos un enlace para ir hasta la parte de abajo de la pagina, es decir, ir al punto asociado a "abajo"-->
+                    <a class ="upDown" href="#abajo"><img src="images/arrow_down_blue.ico"> Ir Abajo </img></a>
+
+                    <br/>
+                    <br/>
+
+                    <div class="info">
+                        <a name="corvus"></a>
+                        <h1>Constelación de Corvus</h1>
+
+                        <br/>
+
+                        <p >La leyenda dice que Apolo se disponía a dar un banquete en honor de Júpiter y al no tener agua envió a su cuervo con una copa (Crater) para buscarla en el manantial. En su camino, el Cuervo, vió una higuera repleta de higos, pero al intentar picotearlos se percató de que no estaban maduros.</p>
+                        <p>Se quedó a descansar hasta que estuvieran maduros y se dió un gran banquete, pero al rato, recordando la misión por la que había sido enviado y temiendo la cólera de Apolo, cogió a una serpiente (Hydra) y a su regreso dió como excusa que ésta le había impedido llenar la copa por haber bloqueado la salida del agua del arroyo, lo cual había causado su demora. El dios no se dejó engañar por la mentira y condenó al Cuervo a que nunca pudiera beber agua hasta que los higos no estuvieran maduros. Apolo, como castigo, colocó al cuervo (Corvus), a la Copa (Crater) y
+                            a la serpiente (Hydra) en el cielo para que no olvidaran que la serpiente de agua guarda el agua del cuervo sediento eternamente.
+                            Corvus está enfrente de la copa (Crater), pero nunca puede beber.</p>
+
+
+                        <div class="images">
+                            <img src="images/mitos1.jpg"  alt="" width="430" height="335"  /> <span><span> el cuervo, hidra y Crater</span></span>
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <a name="escorpio"></a>
+                        <h1>Constelaciones de Escorpio </h1>
+                        <br/>
+
+                        <p>El mito de Escorpio nace de una vieja leyenda griega relacionada con el intento de violación de Artemis (la Luna) por el gigante Orión.</p>
+
+                        <p>En la leyenda se cuenta que Artemis se postró a los pies de su padre (Zeus) y, abrazada a sus rodillas, le pidió una corta túnica, un calzado de cazadora, un carcaj con sus flechas y un arco como el que tenía su hermano Apolo.
+                            En la mitología clásica, Artemis es la diosa de la caza y de los bosques y tiene como símbolo un oso.</p>
+                        <p>Orión era un gigante famoso por su belleza y su enorme fortaleza, hijo de la Tierra y de Poseidón. Su estatura le permitía caminar por el fondo del mar conservando la cabeza fuera del agua.
+                            Cuentan que un día se hallaba Artemis cazando cuando se le apareció en medio del bosque el gigante Orión. Este la vio joven y bella e intentó seducirla – se dice que el gigante intentó violarla-. Pero Artemis era una divinidad casta y para defenderse reclamó la ayuda de un escorpión. Este escorpión picó al gigante mortalmente y la liberó.
+                        </p>
+                        <p></p>
+
+                        <div class="images">
+                            <img src="images/mitos2.jpg"  /> <span><span>Constelacion de escorpio</span></span>
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <a name="geminis"></a>
+                        <h1>Constelacion de Geminis </h1>
+                        <br/>
+                        <p>La constelación de Géminis está representada por los mellizos Cástor y Pólux. Son los hijos de Leda, esposa del rey espartano Tindareo, y de Zeus,
+                            que como ya os conté en un artículo anterior, se convirtió en cisne para porder consquitarla.
+                        </p>
+                        <p>Cástor y Polux nacieron de un huevo, junto con Helena de Troya.
+                            Son conocidos como los dioscuros o hijos de Zeus. En la mayor parte de las narraciones, sólo a Pólux se le considera inmortal.</p>
+
+                        <p>A pesar de ser gemelos, Cástor se suponía que era hijo de Tindareo y por lo tanto mortal. Cástor, tenía fama de domador de caballos y Pólux de combatiente de hazañas.
+                            Su primera hazaña fue liberar a su hermana Helena que habia sido raptada de niña por Teseo.</p>
+
+                        <p>En la expedición de los argonautas (escuadrón de la ciudad de Argos), los gemelos salvaron el navio Argo cuando iba a perderse. Sus caballos se llamaban Flógeo y Hárpago.
+
+                            Cuando Cástor murió por la lanza de Idas, Pólux, tras vengarle, pidió a Zeus que le diera la inmortalidad a su hermano, y desde entonces ambos hermanos forman en los cielos
+                            la constelación de Géminis.
+                        </p>
+
+                        <div class="images">
+                            <img src="images/mitos3.jpg"  /> <span><span>Constelacion de Geminis</span></span>
+                        </div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <a name="orion"></a>
+                        <h1>Constelacion de Orión </h1>
+                        <br/>
+                        <p>En la mitología griega, Orión fue un gigante. Existen diversas versiones del mito de Orión. Una de ellas cuenta que Orión había violado a Mérope, hija de Enopión, quien por ello, lo dejó ciego. Helios le devolvió la vista y a continuación Orión se convirtió en compañero de caza de Artemisa y Leto. Prometió aniquilar todo animal que hubiera sobre la tierra,
+                            por lo que Gea se enfadó e hizo nacer un escorpión enorme que picó a Orión y lo mató. En otra versión fue Artemisa la que lanzó el escorpión contra Orión.
+                        </p>
+                        <p>Existe otra tradición que sostenía que Artemisa se había enamorado de Orión, lo cual despertó celos en Apolo, hermano gemelo de Artemisa. Un día Apolo, viendo a Orión a lo lejos, hizo una apuesta a su hermana desafiándola a que no podía asestarle una flecha a un animal (o a un punto brillante lejos en el océano, en otra versión) que se movía a lo lejos dentro de un bosque (o en lo lejano del mar). Artemisa lanzó su flecha y dio, como siempre, en el blanco. Cuando fue a ver su presa, se dio cuenta de que había aniquilado a su amado Orión.
+                            Fue tan grande su tristeza, sus quejas y sus lamentos que decidió colocar a Orión en el cielo para su consuelo.
+                        </p>
+
+                        <div class="images">
+                            <img src="images/mitos4.jpg"  /> <span><span>Constelacion de Orión</span></span>
+                        </div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <a name="osa"></a>
+                        <h1>Constelacion de la osa mayor </h1>
+                        <br/>
+                        <br/>
+                        <p>
+                            Según la leyenda griega, Zeus, padre de los dioses del Olimpo, se enamoró un día de la hermosa ninfa cazadora Calisto, que vivía en los bosques de Arcadia.
+                            Presa de un intenso amor, Zeus sedujo a Calisto. Hera, la esposa de Zeus, estaba tan celosa de la ninfa, que la convirtió en oso.
+                        </p>
+                        <p>
+                            Pasó el tiempo y cierto día Arkas, hijo de Calisto, que también era cazador, se topó con un oso en el bosque. El animal era nada menos que su madre, pero Arkas no lo sabía. Estaba a punto de dispararle una flecha cuando Zeus intervino para impedírselo y revelarle la verdad. A fin de que Calisto no volviera a tener encuentros peligrosos de esa naturaleza, Zeus la tomó de la cola y la lanzó hacia el cielo. Luego el padre de los dioses olímpicos transformó a Arkas en oso y lo puso también en el cielo para hacerle compañía a su madre. Arkas es hoy la constelación de la Osa Menor,
+                            y la punta de su cola es la estrella polar, guía de navegantes y viajeros desde tiempos antiguos.
+                        </p>
+                        <p>
+                            Pero Hera no estaba conforme. Después de todo, con Calisto dando vueltas en el cielo eternamente, Zeus podía ver a su amor cuando se le antojara. Así que la diosa llamó a su hermano, Poseidón, dios del mar, y le hizo prometer jamás permitir que los osos celestes, Calisto y Arkas, se acercaran a sus dominios acuáticos.
+                            Por eso la Osa Mayor y la Osa Menor nunca se ponen…
+                        </p>
+
+                        <div class="images">
+                            <img src="images/mitos5.jpg"  /> <span><span>Constelacion de la osa mayor</span></span>
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <a name="hidra"></a>
+                        <h1>Constelacion de hidra </h1>
+                        <br/>
+                        <p>
+                            El relato más conocido referido a esta serpiente es el que la asocia con la Hidra de Lerna, vencida por Heracles (Hércules) en el segundo de sus trabajos. Lerna, era una región costera fértil y sagrada, cercana a la ciudad de Argos, había vivido bajo el terror de la mostruosa Hidra.
+                        </p>
+                        <p>
+                            Esta criatura, que vivía en un pantano, tenía el cuerpo de un perro y (en la versión más corriente) nueve cabezas, cada una de las cuales expelía vapores venenosos. De cada cabeza que se cortaba o aplastara nacían tres cabezas nuevas. Para aniquilar a este monstruo, Heracles siguió los consejos que le dio Atenea: lo forzó a salir de su madriguera disparándole dardos de fuego y no respiró mientras duró el combate.
+                            Cortó las cabezas, pero a cada golpe de su espada nacían otras nuevas.
+                        </p>
+                        <p>
+                            Pasó el tiempo y cierto día Arkas, hijo de Calisto, que también era cazador, se topó con un oso en el bosque. El animal era nada menos que su madre, pero Arkas no lo sabía. Estaba a punto de dispararle una flecha cuando Zeus intervino para impedírselo y revelarle la verdad. A fin de que Calisto no volviera a tener encuentros peligrosos de esa naturaleza, Zeus la tomó de la cola y la lanzó hacia el cielo. Luego el padre de los dioses olímpicos transformó a Arkas en oso y lo puso también en el cielo para hacerle compañía a su madre. Arkas es hoy la constelación de la Osa Menor,
+                            y la punta de su cola es la estrella polar, guía de navegantes y viajeros desde tiempos antiguos.
+                        </p>
+                        <p>
+                            El conductor del carro de Heracles, Yolao, acudió en su ayuda. Yolao hizo un fuego en una esquina de la cueva y, cogiendo ramas encendidas, quemó y cauterizo las heridas de la Hidra, cortando de este modo el flujo de
+                            sangre para impedir que se formaran nuevas cabezas.
+                        </p>
+                        <p>
+                            En ese mismo momento, Heracles encontró la inmortal cabeza de oro de Hidra entre el amasijo furioso del cuerpo de la criatura; la arrancó del cuerpo y la enterró debajo de una pesada roca.
+                            Después, la evisceró y mojó las puntas de sus flechas en la hiel del monstruo. Desde entonces cualquier herida producida con estas flechas ha tenido consecuencias fatales.
+
+                        </p>
+                        <br/>
+
+                        <div class="images">
+                            <img src="images/mitos6.jpg"  /> <span><span>Constelacion de hidra</span></span>
+                        </div>
+
+
+                        <a class ="upDown" href="#arriba"><img src="images/arrow_up_blue.ico"> </img> ir arriba</a>
+
+                        <!--creamos una especie de bandera llamada "abajo" que nos traiga a este punto en caso de que clickeen el enlace a la que esta asociada,
+                        en este caso cuando pulsen "ir abajo" en la parte superior de la pagina-->
+                        <a name="abajo"></a>
+                    </div>
+
+                </div>
+
+                <!--div para la seccion de enlaces recomendados, basicamente es una lista donde se colocaran imagen relacionada con el enlace
+                 y el titulo de la informacion la imagen a su vez sera un enlace para acceder al sitio tambien con el enlace de noticia de cada uno "saber mas"-->
+
+                <div id="sidebar">
+                    <div class="sub-box">
+                        <h2>Enlaces recomendados</h2>
+                        <ul>
+                            <li>
+                                <a href="http://www.elespectador.com/noticias/ciencia/esta-es-la-galaxia-ngc-1055-hermana-mayor-de-la-lactea-articulo-682442" target="_blank"><img class="align-left" src="images/noticia1.jpg" alt="" width="68" height="68" /></a>
+                                <p>galaxia NGC 1055, hermana mayor de la Vía Láctea ...<a href="http://www.elespectador.com/noticias/ciencia/esta-es-la-galaxia-ngc-1055-hermana-mayor-de-la-lactea-articulo-682442" target="_blank"> saber mas</a></p>
+                            </li>
+                            <li>
+                                <a href="http://www.esa.int/spaceinvideos/Videos/2013/03/MAXI_J1659_152" target="_blank"><img class="align-left" src="images/noticia2.jpg" alt="" width="68" height="68" /></a>
+                                <p>El vertiginoso baile de una estrella y un agujero negro ...<a href="http://www.esa.int/spaceinvideos/Videos/2013/03/MAXI_J1659_152" target="_blank">saber mas</a></p>
+                            </li>
+                            <li>
+                                <a href="http://astrored.org/blog/contaminacion-luminica-el-cancer-del-cielo/" target="_blank"><img class="align-left" src="images/noticia3.jpg" alt="" width="68" height="68" /></a>
+                                <p>Contaminación lumínica: el cáncer del cielo ...<a href="http://astrored.org/blog/contaminacion-luminica-el-cancer-del-cielo/" target="_blank">saber mas</a></p>
+                            </li>
+
+                            <li>
+                                <a href="http://www.astromia.com/universo/galaxiactiva.html" target="_blank"><img class="align-left" src="images/noticia4.jpg" alt="" width="68" height="68" /></a>
+                                <p>Galaxias activas ... <a href="http://www.astromia.com/universo/galaxiactiva.html" target="_blank">saber mas</a></p>
+                            </li>
+                            <li>
+                                <a href="https://hipertextual.com/2017/03/astronomia-marzo-2017" target="_blank"><img class="align-left" src="images/noticia5.jpg" alt="" width="68" height="68" /></a>
+                                <p>Los eventos astronómicos que no puedes perderte en marzo ...<a href="https://hipertextual.com/2017/03/astronomia-marzo-2017" target="_blank">saber mas</a></p>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--El div con id footer es la caja de abajo donde tendremos la informacion de contacto que asu vez tendra otros div para colocar informacion de redes sociales y otro div para
+    contacto por correo electronico-->
+    <div id="footer">
+
+        <div class="footer-block">
+            <div class="holder">
+                <div class="social-block">
+                    <h3>Contacto</h3>
+
+                    <ul class="contact-list">
+                        <p>Rafael Antonio Salgado López</p>
+
+                        <a href="mailto: rfcvimpiro@gmail.com"> rasalgadol@unal.edu.co </a>
+                    </ul>
+
+                    <h3>Sigueme</h3>
+
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/rafico.rdm" class="facebook" target="_blank" ></a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

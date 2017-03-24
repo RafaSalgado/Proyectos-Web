@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<!--en el head definimos la codificacion de caracteres utilizada, definiendo tambien el titulo de la pagina -->
+<head>
+    <meta charset="utf-8" />
+    <title>Constelaciones</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+    <link rel="shortcut icon" href="images/iconU.png" />
+</head>
+
+<!--creamos el body y los estructuramos mediante diversos div que a su vez contendran a otros para organizar la información, el mas grande y que contendra a todos
+  sera el div con id wrapperPage basicamente la diviremos en dos div mas, w1 que contendra la informacion y footer que es el cajon de abajo con los datos de contacto,
+  basicamente esta va ser la estructura de todas las demas paginas html del ejercicio-->
+
+<body>
+<div id="wrapperPage">
+    <div class="w1">
+        <!--En el header va ser nuestra cabecera donde colocaremos el nombre de la pag y donde estara contenido el menú, el logo va ser un enlace que nos
+        lleve a la pagina principal (index.html) desde cualquier pagina del ejercicio-->
+        <div id="header">
+            <div class="logo-block">
+                <h1 class="logo"><a href="Index.html"></a></h1>
+
+                <p>Un vistazo hacia el universo</p>
+            </div>
+
+            <!--estructuramos el menú de navegación presente en esta pagina html y en todas las demás, y para desplejar un submenu en el enlace "mitos y leyendas" y  que nos lleve
+            a  un  lugar especifico de dicha pagina usamos el href  con la ruta normal concatenado con la etiqueta que ubicamos en la informacion que queremos acceder en dicha pag y
+            asi quedando enlazado cada item con la marca colocada en la pagina "mitos y leyendas"-->
+            <ul id="nav">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li>
+                    <a href="leyendas.html">Mitos/Leyendas</a>
+                    <ul>
+                        <li><a href="leyendas.html#corvus">El Cuervo</a></li>
+                        <li><a href="leyendas.html#escorpio">Escorpio</a></li>
+                        <li><a href="leyendas.html#geminis">Geminis</a></li>
+                        <li><a href="leyendas.html#orion">Orion</a></li>
+                        <li><a href="leyendas.html#osa">Osa Mayor</a></li>
+                        <li><a href="leyendas.html#hidra">Hidra</a></li>
+                    </ul>
+                </li>
+                <li><a href="mirarConstelaciones.html">Observar Constelaciones</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+                <li><a href="lista.html">Lista de Constelaciones</a></li>
+                <li><a href="mapNav.html">Mapa de Navegación</a></li>
+            </ul>
+        </div>
+
+        <!--En el div con id main estara ubicada la informacion a la que hemos accedido, este div  estara constituido por otros 2, un div para el titulo e introduccion al tema
+        y otro que contendra otros 2 div basicos que son la informacion del tema y los enlaces externos(los enlaces estaran disponibles en todas las pag) habran
+        otros div dentro de ellos para organizar la info como el caso de las imagenes y del div content -->
+
+        <div id="main">
+
+            <!--creamos una especie de bandera llamada "arriba" que nos traiga a este punto en caso de que clickeen el enlace a la que esta asociada,
+            en este caso cuando pulsen " ir arriba" en la parte de abajo de la pagina-->
+            <a name="arriba"></a>
+
+
+            <!--el div con clase title-block es para el titulo del tema -->
+
+            <div class="title-block">
+                <h2>Las 88 constelaciones reconocidas por la UAI</h2>
+            </div>
+
+            <!--en este div con clase main-holder lo usamos para organizar el contenido del tema y para los enlaces externos cada uno en un div diferente,
+            aveces las imagenes son mas grandes de lo que se desea asi que las ajustamos colocando los atributos y valores  pertinentes-->
+            <div class="main-holder">
+                <div id="content">
+                    <br/>
+                    <div class="info">
+                        <table>
+                            <tr><th>Nombre en latín </th>
+                                <th>Genitivo </th>
+                                <th>Abreviatura </th>
+                                <th>Nombre español</th>
+                            </tr>
+                            <tr>
+                                <td >Andromeda</td>
+                                <td >Andromedae</td>
+                                <td >And</td>
+                                <td >Andrómeda</td>
+                            </tr>
+                            <tr>
+                                <td >Antlia</td>
+                                <td >Antliae</td>
+                                <td >Ant</td>
+                                <td >Máquina Neumática</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Apus</td>
+                                <td >Apodis</td>
+                                <td >Aps</td>
+                                <td >Ave del Paraíso</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Aquarius</td>
+                                <td >Acuarii</td>
+                                <td >Aqr</td>
+                                <td >Acuario</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Aquila</td>
+                                <td >Aquilae</td>
+                                <td >Aql</td>
+                                <td >Aguila</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Ara</td>
+                                <td >Arae</td>
+                                <td >Ara</td>
+                                <td >Altar</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Aries</td>
+                                <td >Arietis</td>
+                                <td >Ari</td>
+                                <td >Carnero</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Auriga</td>
+                                <td >Aurigae</td>
+                                <td >Aur</td>
+                                <td >Cochero</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Bootes</td>
+                                <td >Bootis</td>
+                                <td >Boo</td>
+                                <td >Boyero</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Caelum</td>
+                                <td >Caeli</td>
+                                <td >Cae</td>
+                                <td >Cincel o El Buril</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Camelopardalis</td>
+                                <td >Camelopardalis</td>
+                                <td >Cam</td>
+                                <td >Jirafa</td>
+
+                            </tr>
+                            <tr>
+                                <td >Cancer</td>
+                                <td >Cancri</td>
+                                <td >Cnc</td>
+                                <td >Cangrejo</td>
+                            </tr>
+                            <tr>
+                                <td >Canes Venatici</td>
+                                <td >Canum Venaticorum</td>
+                                <td >CVn</td>
+                                <td >Perros de Caza</td>
+                            </tr>
+                            <tr>
+                                <td >Canis Major</td>
+                                <td >Canis Majoris</td>
+                                <td >CMa</td>
+                                <td >Can Mayor</td>
+                            </tr>
+                            <tr>
+                                <td >Canis Minor</td>
+                                <td >Canis Minoris</td>
+                                <td >CMi</td>
+                                <td >Can Menor</td>
+                            </tr>
+                            <tr>
+                                <td >Capricornus</td>
+                                <td >Capricorni</td>
+                                <td >Cap</td>
+                                <td >Capricornio o La Cabra</td>
+                            </tr>
+                            <tr>
+                                <td >Carina</td>
+                                <td >Carinae</td>
+                                <td >Car</td>
+                                <td >La Quilla</td>
+                            </tr>
+                            <tr>
+                                <td >Cassiopeia</td>
+                                <td >Cassiopeiae</td>
+                                <td >Cas</td>
+                                <td >Casiopea</td>
+                            </tr>
+                            <tr>
+                                <td >Centaurus</td>
+                                <td >Centauri</td>
+                                <td >Cen</td>
+                                <td >Centauro</td>
+                            </tr>
+                            <tr>
+                                <td >Cepheus</td>
+                                <td >Cephei</td>
+                                <td >Cep</td>
+                                <td >Cefeo</td>
+                            </tr>
+                            <tr>
+                                <td >Cetus</td>
+                                <td >Ceti</td>
+                                <td >Cet</td>
+                                <td >Ballena</td>
+                            </tr>
+                            <tr>
+                                <td >Circinus</td>
+                                <td >Circini</td>
+                                <td >Cir</td>
+                                <td >Compás</td>
+                            </tr>
+                            <tr>
+                                <td >Columba</td>
+                                <td >Columbae</td>
+                                <td >Col</td>
+                                <td >Paloma</td>
+                            </tr>
+                            <tr>
+                                <td >Coma Berenices</td>
+                                <td >Comae Berenices</td>
+                                <td >Com</td>
+                                <td >La Cabellera de Berenice</td>
+                            </tr>
+                            <tr>
+                                <td >Corona Australis</td>
+                                <td >Coronae Australis</td>
+                                <td >CrA</td>
+                                <td >Corona Austral</td>
+                            </tr>
+                            <tr>
+                                <td >Corona Borealis</td>
+                                <td >Coronae Borealis</td>
+                                <td >CrB</td>
+                                <td >Corona Boreal</td>
+                            </tr>
+                            <tr>
+                                <td >Corvus</td>
+                                <td >Corvi</td>
+                                <td >Crv</td>
+                                <td >Cuervo</td>
+                            </tr>
+                            <tr>
+                                <td >Crater</td>
+                                <td >Crateris</td>
+                                <td >Crt</td>
+                                <td >La Copa</td>
+                            </tr>
+                            <tr>
+                                <td >Crux</td>
+                                <td >Crucis</td>
+                                <td >Cru</td>
+                                <td >Cruz del Sur</td>
+                            </tr>
+                            <tr>
+                                <td >Cygnus</td>
+                                <td >Cygni</td>
+                                <td >Cyg</td>
+                                <td >Cisne</td>
+                            </tr>
+                            <tr>
+                                <td >Chamaleon</td>
+                                <td >Chamaeleonis</td>
+                                <td >Cha</td>
+                                <td >Camaleón</td>
+                            </tr>
+                            <tr>
+                                <td >Delphinus</td>
+                                <td >Delphini</td>
+                                <td >Del</td>
+                                <td >Delfín</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Dorado</td>
+                                <td >Doradus</td>
+                                <td >Dor</td>
+                                <td >Carpa Dorada o Pez Espada</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Draco</td>
+                                <td >Draconis</td>
+                                <td >Dra</td>
+                                <td >Dragón</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Equuleus</td>
+                                <td >Equulei</td>
+                                <td >Equ</td>
+                                <td >Caballito o Potrillo</td>
+                            </tr>
+                            <tr>
+                                <td >Eridanus</td>
+                                <td >Eridani</td>
+                                <td >Eri</td>
+                                <td >El Río Eridano</td>
+                            </tr>
+                            <tr>
+                                <td >Fornax</td>
+                                <td >Fornacis</td>
+                                <td >For</td>
+                                <td >Horno</td>
+                            </tr>
+                            <tr>
+                                <td >Gemini</td>
+                                <td >Geminorum</td>
+                                <td >Gem</td>
+                                <td >Los Gemelos</td>
+                            </tr>
+                            <tr>
+                                <td >Grus</td>
+                                <td >Gruis</td>
+                                <td >Gru</td>
+                                <td >Grulla</td>
+                            </tr>
+                            <tr>
+                                <td >Hercules</td>
+                                <td >Herculis</td>
+                                <td >Her</td>
+                                <td >Hércules</td>
+                            </tr>
+                            <tr>
+                                <td >Horologium</td>
+                                <td >Horologii</td>
+                                <td >Hor</td>
+                                <td >El Reloj</td>
+                            </tr>
+                            <tr>
+                                <td >Hydra</td>
+                                <td >Hydrae</td>
+                                <td >Hya</td>
+                                <td >Hidra Hembra</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Hydrus</td>
+                                <td >Hydri</td>
+                                <td >Hyi</td>
+                                <td >Hidra Macho </td>
+                            </tr>
+                            <tr>
+                                <td >Indus</td>
+                                <td >Indi</td>
+                                <td >Ind</td>
+                                <td >Indio</td>
+                            </tr>
+                            <tr>
+                                <td >Lacerta</td>
+                                <td >Lacertae</td>
+                                <td >Lac</td>
+                                <td >Lagarto</td>
+                            </tr>
+                            <tr>
+                                <td >Leo</td>
+                                <td >Leonis</td>
+                                <td >Leo</td>
+                                <td >El León</td>
+                            </tr>
+                            <tr>
+                                <td >Leo Minor</td>
+                                <td >Leonis Minoris</td>
+                                <td >LMi</td>
+                                <td >León Menor</td>
+                            </tr>
+                            <tr>
+                                <td >Lepus</td>
+                                <td >Leporis</td>
+                                <td >Lep</td>
+                                <td >Liebre</td>
+                            </tr>
+                            <tr>
+                                <td >Libra</td>
+                                <td >Librae</td>
+                                <td >Lib</td>
+                                <td >Balanza</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Lupus</td>
+                                <td >Lupi</td>
+                                <td >Lup</td>
+                                <td >Lobo</td>
+                            </tr>
+                            <tr>
+                                <td >Lynx</td>
+                                <td >Lincis</td>
+                                <td >Lyn</td>
+                                <td >Lince</td>
+                            </tr>
+                            <tr>
+                                <td >Lyra</td>
+                                <td >Lyrae</td>
+                                <td >Lyr</td>
+                                <td >Lira</td>
+                            </tr>
+                            <tr>
+                                <td >Mensa</td>
+                                <td >Mensae</td>
+                                <td >Men</td>
+                                <td >Mesa</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Microscopium</td>
+                                <td >Microscopii</td>
+                                <td >Mic</td>
+                                <td >Microscopio</td>
+                            </tr>
+                            <tr>
+                                <td >Monoceros</td>
+                                <td >Monocerotis</td>
+                                <td >Mon</td>
+                                <td >Unicornio</td>
+                            </tr>
+                            <tr>
+                                <td >Musca</td>
+                                <td >Muscae</td>
+                                <td >Mus</td>
+                                <td >Mosca</td>
+                            </tr>
+                            <tr>
+                                <td >Norma</td>
+                                <td >Normae</td>
+                                <td >Nor</td>
+                                <td >Escuadra</td>
+                            </tr>
+                            <tr>
+                                <td >Octans</td>
+                                <td >Octantis</td>
+                                <td >Oct</td>
+                                <td >Octante</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Ophiuchus</td>
+                                <td >Ophiuchi</td>
+                                <td >Oph</td>
+                                <td >Ofiuco</td>
+                            </tr>
+                            <tr>
+                                <td >Orion</td>
+                                <td >Orionis</td>
+                                <td >Ori</td>
+                                <td >Orión</td
+                            </tr>
+                            <tr>
+                                <td >Pavo</td>
+                                <td >Pavonis</td>
+                                <td >Pav</td>
+                                <td >Pavo</td>
+                            </tr>
+                            <tr>
+                                <td >Pegasus</td>
+                                <td >Pegasi</td>
+                                <td >Peg</td>
+                                <td >Pegaso</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Perseus</td>
+                                <td >Persei</td>
+                                <td >Per</td>
+                                <td >Perseo</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Phoenix</td>
+                                <td >Phoenicis</td>
+                                <td >Phe</td>
+                                <td >Ave Fénix</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Pictor</td>
+                                <td >Pictoris</td>
+                                <td >Pic</td>
+                                <td >Caballete de Pintor</td>
+                            </tr>
+                            <tr>
+                                <td >Pisces</td>
+                                <td >Piscium</td>
+                                <td >Psc</td>
+                                <td >Los Peces</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Piscis Austrinus</td>
+                                <td >Piscis Austrini</td>
+                                <td >PsA</td>
+                                <td >pez Austral</td>
+
+                            </tr>
+                            <tr>
+                                <td >Puppis</td>
+                                <td >Puppis</td>
+                                <td >Pup</td>
+                                <td >Popa</td>
+                            </tr>
+                            <tr>
+                                <td >Pyxis</td>
+                                <td >Pyxidis</td>
+                                <td >Pyx</td>
+                                <td >Brújula</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Reticulum</td>
+                                <td >Reticuli</td>
+                                <td >Ret</td>
+                                <td >Retículo</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Sagitta</td>
+                                <td >Sagittae</td>
+                                <td >Sge</td>
+                                <td >Flecha</td>
+                            </tr>
+                            <tr>
+                                <td >Sagittarius</td>
+                                <td >Sagittarii</td>
+                                <td >Sgr</td>
+                                <td >Sagitario</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Scorpius</td>
+                                <td >Scorpii</td>
+                                <td >Sco</td>
+                                <td >Escorpión</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Sculptor</td>
+                                <td >Sculptoris</td>
+                                <td >Scl</td>
+                                <td >Escultor</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Scutum</td>
+                                <td >Scuti</td>
+                                <td >Sct</td>
+                                <td >El Escudo</td>
+                            </tr>
+                            <tr>
+                                <td >Serpens</td>
+                                <td >Serpentis</td>
+                                <td >Ser</td>
+                                <td >Serpiente</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Sextans</td>
+                                <td >Sextantis</td>
+                                <td >Sex</td>
+                                <td >Sextante</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Taurus</td>
+                                <td >Tauri</td>
+                                <td >Tau</td>
+                                <td >Tauro o el Toro</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Telescopium</td>
+                                <td >Telescopii</td>
+                                <td >Tel</td>
+                                <td >Telescopio</td>
+
+                            </tr>
+                            <tr>
+                                <td >Triangulum </td>
+                                <td >Trianguli </td>
+                                <td >Tri</td>
+                                <td >Triángulo </td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Triangulum Australe</td>
+                                <td >Trianguli Australi</td>
+                                <td >TrA</td>
+                                <td >Triángulo Austral</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Tucana</td>
+                                <td >Tucanae</td>
+                                <td >Tuc</td>
+                                <td >Tucán</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Ursa Major</td>
+                                <td >Ursae Majoris</td>
+                                <td >UMa</td>
+                                <td >Osa Mayor</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Ursa Minor</td>
+                                <td >Ursae Minoris</td>
+                                <td >UMi</td>
+                                <td >Osa Menor</td>
+
+
+                            </tr>
+                            <tr>
+                                <td >Vela</td>
+                                <td >Velorum</td>
+                                <td >Vel</td>
+                                <td >Vela</td>
+                            </tr>
+                            <tr>
+                                <td >Virgo</td>
+                                <td >Virginies</td>
+                                <td >Vir</td>
+                                <td >La Virgen</td>
+                            </tr>
+                            <tr>
+                                <td >Volans</td>
+                                <td >Volante</td>
+                                <td >Vol</td>
+                                <td >Pez Volador</td>
+                            </tr>
+                            <tr>
+                                <td >Vulpecula</td>
+                                <td >Vulpeculae</td>
+                                <td >Vul</td>
+                                <td >Zorra o El Zorro</td>
+                            </tr>
+                        </table>
+
+                        <!--creamos un enlace para ir hasta la parte de arriba de la pagina, es decir, ir al punto asociado a "arriba"-->
+                        <a class ="upDown" href="#arriba"><img src="images/arrow_up_blue.ico"> </img> Volver arriba</a>
+
+
+
+                    </div>
+                </div>
+
+
+
+                <!--div para la seccion de enlaces recomendados, basicamente es una lista donde se colocaran imagen relacionada con el enlace
+					y el titulo de la informacion la imagen a su vez sera un enlace para acceder al sitio tambien con el enlace de noticia de cada uno "saber mas"-->
+
+                <div id="sidebar">
+                    <div class="sub-box">
+                        <h2>Enlaces recomendados</h2>
+                        <ul>
+                            <li>
+                                <a href="http://www.elespectador.com/noticias/ciencia/esta-es-la-galaxia-ngc-1055-hermana-mayor-de-la-lactea-articulo-682442" target="_blank"><img class="align-left" src="images/noticia1.jpg" alt="" width="68" height="68" /></a>
+                                <p>galaxia NGC 1055, hermana mayor de la Vía Láctea ...<a href="http://www.elespectador.com/noticias/ciencia/esta-es-la-galaxia-ngc-1055-hermana-mayor-de-la-lactea-articulo-682442" target="_blank"> saber mas</a></p>
+                            </li>
+                            <li>
+                                <a href="http://www.esa.int/spaceinvideos/Videos/2013/03/MAXI_J1659_152" target="_blank"><img class="align-left" src="images/noticia2.jpg" alt="" width="68" height="68" /></a>
+                                <p>El vertiginoso baile de una estrella y un agujero negro ...<a href="http://www.esa.int/spaceinvideos/Videos/2013/03/MAXI_J1659_152" target="_blank">saber mas</a></p>
+                            </li>
+                            <li>
+                                <a href="http://astrored.org/blog/contaminacion-luminica-el-cancer-del-cielo/" target="_blank"><img class="align-left" src="images/noticia3.jpg" alt="" width="68" height="68" /></a>
+                                <p>Contaminación lumínica: el cáncer del cielo ...<a href="http://astrored.org/blog/contaminacion-luminica-el-cancer-del-cielo/" target="_blank">saber mas</a></p>
+                            </li>
+
+                            <li>
+                                <a href="http://www.astromia.com/universo/galaxiactiva.html" target="_blank"><img class="align-left" src="images/noticia4.jpg" alt="" width="68" height="68" /></a>
+                                <p>Galaxias activas ... <a href="http://www.astromia.com/universo/galaxiactiva.html" target="_blank">saber mas</a></p>
+                            </li>
+                            <li>
+                                <a href="https://hipertextual.com/2017/03/astronomia-marzo-2017" target="_blank"><img class="align-left" src="images/noticia5.jpg" alt="" width="68" height="68" /></a>
+                                <p>Los eventos astronómicos que no puedes perderte en marzo ...<a href="https://hipertextual.com/2017/03/astronomia-marzo-2017" target="_blank">saber mas</a></p>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--El div con id footer es la caja de abajo donde tendremos la informacion de contacto que asu vez tendra otros div para colocar informacion de redes sociales y otro div para
+    contacto por correo electronico-->
+
+    <div id="footer">
+
+        <div class="footer-block">
+            <div class="holder">
+                <div class="social-block">
+                    <h3>Contacto</h3>
+                    <ul class="contact-list">
+                        <p>Rafael Antonio Salgado López</p>
+
+                        <a href="mailto: rfcvimpiro@gmail.com"> rasalgadol@unal.edu.co </a>
+                    </ul>
+
+                    <h3>Sigueme</h3>
+
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/rafico.rdm" class="facebook" target="_blank" ></a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

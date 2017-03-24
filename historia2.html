@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<!--en el head definimos la codificacion de caracteres utilizada, definiendo tambien el titulo de la pagina -->
+<head>
+    <meta charset="utf-8" />
+    <title>Constelaciones</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+    <link rel="shortcut icon" href="images/iconU.png" />
+</head>
+
+<!--creamos el body y los estructuramos mediante diversos div que a su vez contendran a otros para organizar la información, el mas grande y que contendra a todos
+  sera el div con id wrapperPage basicamente la diviremos en dos div mas, w1 que contendra la informacion y footer que es el cajon de abajo con los datos de contacto,
+  basicamente esta va ser la estructura de todas las demas paginas html del ejercicio-->
+
+<body>
+<div id="wrapperPage">
+    <div class="w1">
+        <!--En el header va ser nuestra cabecera donde colocaremos el nombre de la pag y donde estara contenido el menú, el logo va ser un enlace que nos
+          lleve a la pagina principal (index.html) desde cualquier pagina del ejercicio-->
+        <div id="header">
+            <div class="logo-block">
+                <h1 class="logo"><a href="Index.html"></a></h1>
+
+                <p>Un vistazo hacia el universo</p>
+            </div>
+            <!--estructuramos el menú de navegación presente en esta pagina html y en todas las demás, y para desplejar un submenu en el enlace "mitos y leyendas" y  que nos lleve
+               a  un  lugar especifico de dicha pagina usamos el href  con la ruta normal concatenado con la etiqueta que ubicamos en la informacion que queremos acceder en dicha pag y
+            asi quedando enlazado cada item con la marca colocada en la pagina "mitos y leyendas"-->
+            <ul id="nav">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li>
+                    <a href="leyendas.html">Mitos/Leyendas</a>
+                    <ul>
+                        <li><a href="leyendas.html#corvus">El Cuervo</a></li>
+                        <li><a href="leyendas.html#escorpio">Escorpio</a></li>
+                        <li><a href="leyendas.html#geminis">Geminis</a></li>
+                        <li><a href="leyendas.html#orion">Orion</a></li>
+                        <li><a href="leyendas.html#osa">Osa Mayor</a></li>
+                        <li><a href="leyendas.html#hidra">Hidra</a></li>
+                    </ul>
+                </li>
+                <li><a href="mirarConstelaciones.html">Observar Constelaciones</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+                <li><a href="lista.html">Lista de Constelaciones</a></li>
+                <li><a href="mapNav.html">Mapa de Navegación</a></li>
+            </ul>
+        </div>
+
+        <!--En el div con id main estara ubicada la informacion a la que hemos accedido, este div en este caso tendra 2 div basicos con id main-holder que contendra
+        la informacion repartida en otros div  del tema y los enlaces externos(los enlaces estaran disponibles en todas las pag)-->
+        <div id="main">
+
+            <!--creamos una especie de bandera llamada "arriba" que nos traiga a este punto en caso de que clickeen el enlace a la que esta asociada,
+            en este caso cuando pulsen " ir arriba" en la parte de abajo de la pagina-->
+            <a name="arriba"></a>
+
+            <!--en este div con clase main-holder lo usamos para organizar el contenido del tema y para los enlaces externos cada uno en un div diferente,
+            aveces las imagenes son mas grandes de lo que se desea asi que las ajustamos colocando los atributos y valores  pertinentes-->
+            <div class="main-holder">
+                <div id="content">
+
+                    <!--En este div colocaremos los numeros de pagina a las que estan asociadas las diferentes paginas que componen el tema de la
+                    historia de las constelaciones, y que nos ayudara a navegar entre estas-->
+                    <div class="paging">
+                        <ul>
+                            <li ><a href="historia.html">1</a></li>
+                            <li><a href="historia2.html">2</a></li>
+                            <li><a href="historia3.html">3</a></li>
+                        </ul>
+                    </div>
+
+
+                    <!--creamos un enlace para ir hasta la parte de abajo de la pagina, es decir, ir al punto asociado a "abajo"-->
+                    <a class ="upDown" href="#abajo"><img src="images/arrow_down_blue.ico"> Ir Abajo </img></a>
+                    <br/>
+                    <br/>
+                    <div class="info">
+                        <h1>Constelaciones Incas</h1>
+                        <br/>
+
+                        <p >Dentro de la Astronomía Inca, existían dos tipos de constelaciones:Las Constelaciones Estelares o Brillantes constituidas por estrellas individuales de magnitudes muy brillantes, que por sí mismas constituían una “constelación” y de otras que agrupadas o unidas al modo occidental (de estrella a estrella) forman figuras en el cielo nocturno. El segundo tipo de constelaciones lo constituyen las condensaciones de polvo
+                            y gas interestelar que a manera de manchas oscuras ocupan espacios dentro de la Vía Láctea formando las llamadas Constelaciones Oscuras o Negras.</p>
+                        <p>Los astrónomos de la civilización inca identificaron diversas áreas oscuras de la Vía Láctea como animales, y los asociaron con la temporada de lluvias; debido a esto se les conoce como «constelaciones oscuras». Estas áreas son las que comúnmente se denominan nebulosas oscuras.
+                            Es precisamente en Cuzco donde muchos investigadores han encontrado documentos de colonizadores españoles que describen el Templo del Sol, del cual irradiaban cuarenta y un ejes llamados ceques,
+                            cuya disposición implicaba lineamientos geománticos o astronómicos, que definían el valle en 328 huacas las cuales cumplían funciones rituales y políticas.</p>
+
+                        <p>Los Incas conocían la revolución sinódica de los planetas, e igualmente construyeron un calendario lunar para las fiestas religiosas y uno solar para la agricultura. Para tal propósito utilizaron elementos como montículos alrededor de los pueblos para realizar astronomía observacional.
+                            El calendario consistía en un año solar de 365 días, repartidos en 12 meses de 30 días y con 5 días intercalados. Se sabe que el calendario era determinado observando al sol y a la luna. Para fijar las fechas exactas del año y meses, Pachacútec dispuso la edificación de 12 torres o
+                            pilares localizados al este de la llacta del Cuzco, llamados sucangas.</p>
+
+                        <p>Los Incas daban mucha importancia a las constelaciones y estaban muy interesados en la medición del tiempo para fines agrícolas.
+                            Poseían sus propias constelaciones y para ellos las Vía Láctea era oscurecida por sacos de carbón. La astronomía jugó un papel muy importante para la construcción de sus
+                            ciudades.</p>
+
+                        <br/>
+                        <br/>
+
+                        <h1>Constelaciones zodiacales</h1>
+
+                        <br/>
+
+                        <p>El zodíaco es una franja del cielo por donde, aparentemente, transitan el Sol y los planetas. Durante el siglo V a. C. dicha región fue dividida en doce partes iguales (una por cada mes del año) a las cuales dieron el nombre de la constelación más próxima (asterismos que muy bien podrían haber existido antes de la invención del zodíaco). Estas constelaciones son tradicionalmente las siguientes: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpius, Sagittarius, Capricornus, Aquarius y Pisces.
+                            Tras el establecimiento de los límites de las constelaciones en 1930, el Sol también cruza las constelaciones de la Ballena y Ofiuco.</p>
+
+                        <p>Además de las doce constelaciones del Zodíaco antes presentadas, Ptolomeo recogió en su inventario otras 36 figuras</p>
+                        <ul>
+                            <li>Andrómeda (Andrómeda), la princesa</li>
+                            <li>    Aquila, el águila</li>
+                            <li>    Ara, el altar</li>
+                            <li>    Argo Navis, el navío Argo.</li>
+                            <li>    Auriga, el cochero</li>
+                            <li>    Bootes, el boyero o pastor de bueyes</li>
+                            <li>    Canis Major (Can Mayor)</li>
+                            <li>    Canis Minor (Can Menor)</li>
+                            <li>    Casiopea (Casiopea), la reina</li>
+                            <li>    Centaurus (Centauro)</li>
+                            <li>    Cefeo (Cefeo), el rey</li>
+                            <li>    Cetus, la ballena o monstruo marino</li>
+                            <li>    Corona Australis (Corona Austral), la corona del sur</li>
+                            <li>    Corona Borealis (Corona Boreal), la corona del norte</li>
+                            <li>    Corvus, el cuervo</li>
+                            <li>    Cráter, la copa</li>
+                            <li>    Cygnus, el cisne</li>
+                            <li>    Delphinus, el delfín</li>
+                            <li>    Draco, el dragón</li>
+                            <li>    Equuleus, el pequeño caballo</li>
+                            <li>    Eridanus, el río Erídano, un río mitológico</li>
+                            <li>    Hércules (Hércules), el héroe</li>
+                            <li>    Hidra, la hidra o serpiente de mar, un monstruo mitológico</li>
+                            <li>    Lepus, la liebre</li>
+                            <li>    Lupus, el lobo</li>
+                            <li>    Lyra, la lira</li>
+                            <li>    Ophiuchus (Ofiuco), el portador de la serpiente o Serpentario</li>
+                            <li>    Orión (Orión), el cazador</li>
+                            <li>    Pegaso (Pegaso), el caballo alado</li>
+                            <li>    Perseo (Perseo), otro héroe</li>
+                            <li>    Piscis Austrinus (Pez Austral), el pez del sur</li>
+                            <li>    Sagitta, la flecha</li>
+                            <li>    Serpens la serpiente </li>
+                            <li>    Triangulum el triángulo</li>
+                            <li>    La Osa Mayor.</li>
+                            <li>    Ursa Minor (Osa Menor)</li>
+                        </ul>
+
+
+                        <div class="images">
+                            <img src="images/historia5.jpg"  /> <span><span>Constelaciones de Plomeo</span></span>
+                        </div>
+
+                        <br/>
+                        <p>Las 48 constelaciones inscritas por Ptolomeo en el Almagesto fueron las únicas reconocidas en el mundo occidental hasta el final de la Edad Media. Con excepción de Argo Navis, que fuera dividida en cuatro constelaciones más tarde, todas ellas fueron adoptadas sin cambios por la Unión Astronómica Internacional.</p>
+
+
+
+                        <br/>
+                        <br/>
+                        <br/>
+
+
+                        <h1>Constelaciones modernas </h1>
+                        <br/>
+                        <p>El mundo occidental perdió el gran tratado astronómico de Ptolomeo por muchos años. Fueron los astrónomos árabes quienes heredaron el Almagesto (de ellos proviene el nombre por el cual se conoce generalmente) y expandieron sus observaciones. Estos destacados estudiosos del cielo añadieron algunas constelaciones que ya no se utilizan actualmente y expandieron otras ya existentes (como Eridanus, a la cual asignaron otra serie de estrellas más al sur). Su propósito fue describir e incorporar estrellas que no eran visibles desde Alejandría, pero sí desde el sur de sus dominios.
+                            Tras muchos años, hacia fines de la Edad Media, la obra de Ptolomeo es recuperada en Europa a través de traducciones en latín de fuentes árabes.
+                        </p>
+                        <p>A partir del siglo XVI, cuando de Europa salieron navegantes a explorar los mares del sur, los marinos se encontraron, así mismo, con un cielo desconocido,
+                            cuyas estrellas requerían ser identificadas por ellos. Por lo tanto, y para que sirvieran de ayuda en la navegación, se idearon nuevas constelaciones.</p>
+
+
+
+                        <!--creamos un enlace para ir hasta la parte de arriba de la pagina, es decir, ir al punto asociado a "arriba"-->
+                        <a class ="upDown" href="#arriba"><img src="images/arrow_up_blue.ico"> </img> ir arriba</a>
+
+                        <!--creamos una especie de bandera llamada "abajo" que nos traiga a este punto en caso de que clickeen el enlace a la que esta asociada,
+                        en este caso cuando pulsen "ir abajo" en la parte superior de la pagina-->
+                        <a name="abajo"></a>
+                    </div>
+
+
+                    <!--En este div colocaremos los numeros de pagina a las que estan asociadas las diferentes paginas que componen el tema de la
+                    historia de las constelaciones, y que nos ayudara a navegar entre estas-->
+                    <div class="paging">
+                        <ul>
+                            <p>pag ...</p>
+                            <li class="active" ><a href="historia.html">1</a></li>
+                            <li><a href="historia2.html">2</a></li>
+                            <li><a href="historia3.html">3</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!--div para la seccion de enlaces recomendados, basicamente es una lista donde se colocaran imagen relacionada con el enlace
+                y el titulo de la informacion la imagen a su vez sera un enlace para acceder al sitio tambien con el enlace de noticia de cada uno "saber mas"-->
+
+                <div id="sidebar">
+                    <div class="sub-box">
+                        <h2>Enlaces recomendados</h2>
+                        <ul>
+                            <li>
+                                <a href="http://www.elespectador.com/noticias/ciencia/esta-es-la-galaxia-ngc-1055-hermana-mayor-de-la-lactea-articulo-682442" target="_blank"><img class="align-left" src="images/noticia1.jpg" alt="" width="68" height="68" /></a>
+                                <p>galaxia NGC 1055, hermana mayor de la Vía Láctea ...<a href="http://www.elespectador.com/noticias/ciencia/esta-es-la-galaxia-ngc-1055-hermana-mayor-de-la-lactea-articulo-682442" target="_blank"> saber mas</a></p>
+                            </li>
+                            <li>
+                                <a href="http://www.esa.int/spaceinvideos/Videos/2013/03/MAXI_J1659_152" target="_blank"><img class="align-left" src="images/noticia2.jpg" alt="" width="68" height="68" /></a>
+                                <p>El vertiginoso baile de una estrella y un agujero negro ...<a href="http://www.esa.int/spaceinvideos/Videos/2013/03/MAXI_J1659_152" target="_blank">saber mas</a></p>
+                            </li>
+                            <li>
+                                <a href="http://astrored.org/blog/contaminacion-luminica-el-cancer-del-cielo/" target="_blank"><img class="align-left" src="images/noticia3.jpg" alt="" width="68" height="68" /></a>
+                                <p>Contaminación lumínica: el cáncer del cielo ... <a href="http://astrored.org/blog/contaminacion-luminica-el-cancer-del-cielo/" target="_blank">saber mas</a></p>
+                            </li>
+
+                            <li>
+                                <a href="http://www.astromia.com/universo/galaxiactiva.html" target="_blank"><img class="align-left" src="images/noticia4.jpg" alt="" width="68" height="68" /></a>
+                                <p>Galaxias activas ... <a href="http://www.astromia.com/universo/galaxiactiva.html" target="_blank">saber mas</a></p>
+                            </li>
+                            <li>
+                                <a href="https://hipertextual.com/2017/03/astronomia-marzo-2017" target="_blank"><img class="align-left" src="images/noticia5.jpg" alt="" width="68" height="68" /></a>
+                                <p>Los eventos astronómicos que no puedes perderte en marzo ... <a href="https://hipertextual.com/2017/03/astronomia-marzo-2017" target="_blank">saber mas</a></p>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--El div con id footer es la caja de abajo donde tendremos la informacion de contacto que asu vez tendra otros div para colocar informacion de redes sociales y otro div para
+    contacto por correo electronico-->
+    <div id="footer">
+
+        <div class="footer-block">
+            <div class="holder">
+                <div class="social-block">
+                    <h3>Contacto</h3>
+                    <ul class="contact-list">
+                        <p>Rafael Antonio Salgado López</p>
+
+                        <a href="mailto: rfcvimpiro@gmail.com"> rasalgadol@unal.edu.co </a>
+                    </ul>
+
+                    <h3>Sigueme</h3>
+
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/rafico.rdm" class="facebook" target="_blank" ></a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

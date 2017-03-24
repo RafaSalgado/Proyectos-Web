@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<!--en el head definimos la codificacion de caracteres utilizada, definiendo tambien el titulo de la pagina -->
+<head>
+    <meta charset="utf-8" />
+    <title>Constelaciones</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+    <link rel="shortcut icon" href="images/iconU.png" />
+</head>
+
+<!--creamos el body y los estructuramos mediante diversos div que a su vez contendran a otros para organizar la información, el mas grande y que contendra a todos
+  sera el div con id wrapperPage basicamente la diviremos en dos div mas, w1 que contendra la informacion y footer que es el cajon de abajo con los datos de contacto,
+  basicamente esta va ser la estructura de todas las demas paginas html del ejercicio-->
+
+<body>
+<div id="wrapperPage">
+    <div class="w1">
+        <!--En el header va ser nuestra cabecera donde colocaremos el nombre de la pag y donde estara contenido el menú, el logo va ser un enlace que nos
+        lleve a la pagina principal (index.html) desde cualquier pagina del ejercicio-->
+        <div id="header">
+            <div class="logo-block">
+                <h1 class="logo"><a href="Index.html"></a></h1>
+
+                <p>Un vistazo hacia el universo</p>
+            </div>
+
+            <!--estructuramos el menú de navegación presente en esta pagina html y en todas las demás, y para desplejar un submenu en el enlace "mitos y leyendas" y  que nos lleve
+            a  un  lugar especifico de dicha pagina usamos el href  con la ruta normal concatenado con la etiqueta que ubicamos en la informacion que queremos acceder en dicha pag y
+            asi quedando enlazado cada item con la marca colocada en la pagina "mitos y leyendas"-->
+            <ul id="nav">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li>
+                    <a href="leyendas.html">Mitos/Leyendas</a>
+                    <ul>
+                        <li><a href="leyendas.html#corvus">El Cuervo</a></li>
+                        <li><a href="leyendas.html#escorpio">Escorpio</a></li>
+                        <li><a href="leyendas.html#geminis">Geminis</a></li>
+                        <li><a href="leyendas.html#orion">Orion</a></li>
+                        <li><a href="leyendas.html#osa">Osa Mayor</a></li>
+                        <li><a href="leyendas.html#hidra">Hidra</a></li>
+                    </ul>
+                </li>
+                <li><a href="mirarConstelaciones.html">Observar Constelaciones</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+                <li><a href="lista.html">Lista de Constelaciones</a></li>
+                <li><a href="mapNav.html">Mapa de Navegación</a></li>
+            </ul>
+        </div>
+
+        <!--En el div con id main estara ubicada la informacion a la que hemos accedido, este div  estara constituido por otros 2, un div para el titulo e introduccion al tema
+        y otro que contendra otros 2 div basicos que son la informacion del tema y los enlaces externos(los enlaces estaran disponibles en todas las pag) habran
+        otros div dentro de ellos para organizar la info como el caso de las imagenes y del div content -->
+
+        <div id="main">
+
+            <!--creamos una especie de bandera llamada "arriba" que nos traiga a este punto en caso de que clickeen el enlace a la que esta asociada,
+            en este caso cuando pulsen " ir arriba" en la parte de abajo de la pagina-->
+            <a name="arriba"></a>
+
+
+            <!--el div con clase title-block es para el titulo del tema -->
+
+            <div class="title-block">
+                <h2>Mapa de Navegación y Creditos</h2>
+            </div>
+
+            <!--en este div con clase main-holder lo usamos para organizar el contenido del tema y para los enlaces externos cada uno en un div diferente,
+            aveces las imagenes son mas grandes de lo que se desea asi que las ajustamos colocando los atributos y valores  pertinentes-->
+            <div class="main-holder">
+                <div id="content">
+                    <br/>
+                    <div class="info">
+                        <h1>Mapa de Navegación</h1>
+                        <br/>
+
+                        <div class="images">
+                            <img src="images/map.jpg" alt="" width="900" height="455" /> <span><span>Mapa de Navegación</span></span>
+                        </div>
+
+                        <br/>   <br/>
+
+                        <h1>Referencias</h1>
+                        <br/>
+                        <ul>
+                            <li> <a href="https://es.wikipedia.org/wiki/Constelaci%C3%B3n" target="_blank"> Wikipedia: Constelaciones e imagenes</a> </li>
+                            <li> <a href="http://www.lavidayeluniverso.com.ar/2009/12/leyendas-de-las-constelaciones.html" target="_blank"> Leyendas del Universo</a> </li>
+                            <li> <a href="http://carlosnieto.com/empresas/lecturatarot/blog/constelacion-de-corvus/" target="_blank"> Constelacion de Corvus</a> </li>
+                            <li> <a href="http://www.astroyciencia.com/" target="_blank"> Mitos y Leyendas e imagenes de ellas</a> </li>
+                            <li> <a href=" http://wallpapercave.com/wp/ll3GLmS.jpg" target="_blank"> Imagen Fondo</a> </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--El div con id footer es la caja de abajo donde tendremos la informacion de contacto que asu vez tendra otros div para colocar informacion de redes sociales y otro div para
+    contacto por correo electronico-->
+
+    <div id="footer">
+
+        <div class="footer-block">
+            <div class="holder">
+                <div class="social-block">
+                    <h3>Contacto</h3>
+                    <ul class="contact-list">
+                        <p>Rafael Antonio Salgado López</p>
+                        <a href="mailto: rfcvimpiro@gmail.com"> rasalgadol@unal.edu.co </a>
+                    </ul>
+
+                    <h3>Sigueme</h3>
+
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/rafico.rdm" class="facebook" target="_blank" ></a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
